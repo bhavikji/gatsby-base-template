@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: bhavikji/gatsby-base-template
   branch: master
 
