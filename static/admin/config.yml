@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: bhavikji/gatsby-base-template
   branch: master
 
 media_folder: content/assets
