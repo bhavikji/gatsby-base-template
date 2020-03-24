@@ -36,6 +36,14 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    // for blog
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `content/assets`,
+    //     path: `${__dirname}/content/assets`,
+    //   },
+    // },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -51,6 +59,7 @@ module.exports = {
             options: {
               maxWidth: 1920,
               // quality: 70,
+              withWebp: true,
             },
           },
         ],

@@ -1,0 +1,38 @@
+backend:
+  name: github
+  branch: master
+
+media_folder: content/assets
+public_folder: assets
+
+collections:
+- name: blog
+  label: Blog
+  folder: "content/blog"
+  create: true
+  fields:
+  - { label: 'template', name: 'template', widget: 'hidden', default: 'blog' }
+  - label: 'Master Category'
+    name: 'master_category'
+    widget: 'select'
+    options:
+    - { label: 'Category1', value: 'Category1' }
+    - { label: 'Category2', value: 'Category2' }
+  - { name: featuredImage, label: Featured Image, widget: image }
+  - { name: fullBanner, label: Full Banner, widget: boolean, default: true }
+  - { name: seoTitle, label: Seo Title }
+  - { name: title, label: Title }
+  - { name: slug, label: Blog Slug, default: '/blog/' }
+  - { name: draft, label: Draft, widget: boolean, default: true }
+  - { name: date, label: Publish Date, widget: datetime }
+  - { name: dateModified, label: Modified Date, widget: datetime }
+  - { name: keywords, label: Keywords }
+  - {
+    label: 'Tags',
+    name: 'tags',
+    widget: 'list',
+  }
+  - { name: description, label: description, widget: 'text' }
+  - { name: metaDescription, label: Meta Description, widget: 'text' }
+  - { name: body, label: Body, widget: markdown }
+
